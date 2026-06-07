@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Select Surah</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<header class="glass-nav">
+  <img src="assets/images/logo.png" class="logo" />
+  <button class="theme-btn" onclick="toggleTheme()">🌙</button>
+</header>
+
+<main class="container">
+<h2 style="color: var(--text-color, black);">Select a Surah</h2>
+
+  <ul style="color: var(--list-color, rgb(255, 255, 255));" class="surah-list">
+    <li class="available" onclick="selectSurah(1)">1. Al-Fatiha · الفاتحة</li>
+    <li class="disabled">2. Al-Baqarah · البقرة (Coming Soon)</li>
+    <li class="disabled">3. Al-Imran · آل عمران (Coming Soon)</li>
+    <li class="disabled">4. An-Nisa · النساء (Coming Soon)</li>
+    <li class="disabled">5. Al-Ma'idah · المائدة (Coming Soon)</li>
+    <li class="disabled">6. Al-An'am · الأنعام (Coming Soon)</li>
+    <li class="disabled">7. Al-A'raf · الأعراف (Coming Soon)</li>
+    <li class="disabled">8. Al-Anfal · الأنفال (Coming Soon)</li>
+    <li class="disabled">9. At-Tawbah · التوبة (Coming Soon)</li>
+    <li class="disabled">10. Yunus · يونس (Coming Soon)</li>
+    <li class="disabled">11. Hud · هود (Coming Soon)</li>
+    <li class="disabled">12. Yusuf · يوسف (Coming Soon)</li>
+    <li class="disabled">13. Ar-Ra'd · الرعد (Coming Soon)</li>
+    <li class="disabled">14. Ibrahim · إبراهيم (Coming Soon)</li>
+    <li class="disabled">15. Al-Hijr · الحجر (Coming Soon)</li>
+    <li class="disabled">16. An-Nahl · النحل (Coming Soon)</li>
+    <li class="disabled">17. Al-Isra · الإسراء (Coming Soon)</li>
+    <li class="disabled">18. Al-Kahf · الكهف (Coming Soon)</li>
+    <li class="disabled">19. Maryam · مريم (Coming Soon)</li>
+    <li class="disabled">20. Ta-Ha · طه (Coming Soon)</li>
+    <li class="disabled">21. Al-Anbiya · الأنبياء (Coming Soon)</li>
+    <li class="disabled">22. Al-Hajj · الحج (Coming Soon)</li>
+    <li class="disabled">23. Al-Mu'minun · المؤمنون (Coming Soon)</li>
+    <li class="disabled">24. An-Nur · النور (Coming Soon)</li>
+    <li class="disabled">25. Al-Furqan · الفرقان (Coming Soon)</li>
+    <li class="disabled">26. Ash-Shu'ara · الشعراء (Coming Soon)</li>
+    <li class="disabled">27. An-Naml · النمل (Coming Soon)</li>
+    <li class="disabled">28. Al-Qasas · القصص (Coming Soon)</li>
+    <li class="disabled">29. Al-Ankabut · العنكبوت (Coming Soon)</li>
+    <li class="disabled">30. Ar-Rum · الروم (Coming Soon)</li>
+    <li class="disabled">31. Luqman · لقمان (Coming Soon)</li>
+    <li class="disabled">32. As-Sajdah · السجدة (Coming Soon)</li>
+    <li class="disabled">33. Al-Ahzab · الأحزاب (Coming Soon)</li>
+    <li class="disabled">34. Saba · سبأ (Coming Soon)</li>
+    <li class="disabled">35. Fatir · فاطر (Coming Soon)</li>
+    <li class="disabled">36. Ya-Sin · يس (Coming Soon)</li>
+    <li class="disabled">37. As-Saffat · الصافات (Coming Soon)</li>
+    <li class="disabled">38. Sad · ص (Coming Soon)</li>
+    <li class="disabled">39. Az-Zumar · الزمر (Coming Soon)</li>
+    <li class="disabled">40. Ghafir · غافر (Coming Soon)</li>
+    <li class="disabled">41. Fussilat · فصلت (Coming Soon)</li>
+    <li class="disabled">42. Ash-Shura · الشورى (Coming Soon)</li>
+    <li class="disabled">43. Az-Zukhruf · الزخرف (Coming Soon)</li>
+    <li class="disabled">44. Ad-Dukhan · الدخان (Coming Soon)</li>
+    <li class="disabled">45. Al-Jathiyah · الجاثية (Coming Soon)</li>
+    <li class="disabled">46. Al-Ahqaf · الأحقاف (Coming Soon)</li>
+    <li class="disabled">47. Muhammad · محمد (Coming Soon)</li>
+    <li class="disabled">48. Al-Fath · الفتح (Coming Soon)</li>
+    <li class="disabled">49. Al-Hujurat · الحجرات (Coming Soon)</li>
+    <li class="disabled">50. Qaf · ق (Coming Soon)</li>
+    <li class="disabled">51. Adh-Dhariyat · الذاريات (Coming Soon)</li>
+    <li class="disabled">52. At-Tur · الطور (Coming Soon)</li>
+    <li class="disabled">53. An-Najm · النجم (Coming Soon)</li>
+    <li class="disabled">54. Al-Qamar · القمر (Coming Soon)</li>
+    <li class="disabled">55. Ar-Rahman · الرحمن (Coming Soon)</li>
+    <li class="disabled">56. Al-Waqi'ah · الواقعة (Coming Soon)</li>
+    <li class="disabled">57. Al-Hadid · الحديد (Coming Soon)</li>
+    <li class="disabled">58. Al-Mujadila · المجادلة (Coming Soon)</li>
+    <li class="disabled">59. Al-Hashr · الحشر (Coming Soon)</li>
+    <li class="disabled">60. Al-Mumtahanah · الممتحنة (Coming Soon)</li>
+    <li class="disabled">61. As-Saff · الصف (Coming Soon)</li>
+    <li class="disabled">62. Al-Jumu'ah · الجمعة (Coming Soon)</li>
+    <li class="disabled">63. Al-Munafiqun · المنافقون (Coming Soon)</li>
+    <li class="disabled">64. At-Taghabun · التغابن (Coming Soon)</li>
+    <li class="disabled">65. At-Talaq · الطلاق (Coming Soon)</li>
+    <li class="disabled">66. At-Tahrim · التحريم (Coming Soon)</li>
+    <li class="disabled">67. Al-Mulk · الملك (Coming Soon)</li>
+    <li class="disabled">68. Al-Qalam · القلم (Coming Soon)</li>
+    <li class="disabled">69. Al-Haqqah · الحاقة (Coming Soon)</li>
+    <li class="disabled">70. Al-Ma'arij · المعارج (Coming Soon)</li>
+    <li class="disabled">71. Nuh · نوح (Coming Soon)</li>
+    <li class="disabled">72. Al-Jinn · الجن (Coming Soon)</li>
+    <li class="disabled">73. Al-Muzzammil · المزمل (Coming Soon)</li>
+    <li class="disabled">74. Al-Muddaththir · المدثر (Coming Soon)</li>
+    <li class="disabled">75. Al-Qiyamah · القيامة (Coming Soon)</li>
+    <li class="disabled">76. Al-Insan · الإنسان (Coming Soon)</li>
+    <li class="disabled">77. Al-Mursalat · المرسلات (Coming Soon)</li>
+    <li class="disabled">78. An-Naba · النبأ (Coming Soon)</li>
+    <li class="disabled">79. An-Nazi'at · النازعات (Coming Soon)</li>
+    <li class="disabled">80. Abasa · عبس (Coming Soon)</li>
+    <li class="disabled">81. At-Takwir · التكوير (Coming Soon)</li>
+    <li class="disabled">82. Al-Infitar · الانفطار (Coming Soon)</li>
+    <li class="disabled">83. Al-Mutaffifin · المطففين (Coming Soon)</li>
+    <li class="disabled">84. Al-Inshiqaq · الانشقاق (Coming Soon)</li>
+    <li class="disabled">85. Al-Buruj · البروج (Coming Soon)</li>
+    <li class="disabled">86. At-Tariq · الطارق (Coming Soon)</li>
+    <li class="disabled">87. Al-A'la · الأعلى (Coming Soon)</li>
+    <li class="disabled">88. Al-Ghashiyah · الغاشية (Coming Soon)</li>
+    <li class="disabled">89. Al-Fajr · الفجر (Coming Soon)</li>
+    <li class="disabled">90. Al-Balad · البلد (Coming Soon)</li>
+    <li class="disabled">91. Ash-Shams · الشمس (Coming Soon)</li>
+    <li class="disabled">92. Al-Layl · الليل (Coming Soon)</li>
+    <li class="disabled">93. Ad-Duha · الضحى (Coming Soon)</li>
+    <li class="disabled">94. Ash-Sharh · الشرح (Coming Soon)</li>
+    <li class="disabled">95. At-Tin · التين (Coming Soon)</li>
+    <li class="disabled">96. Al-Alaq · العلق (Coming Soon)</li>
+    <li class="disabled">97. Al-Qadr · القدر (Coming Soon)</li>
+    <li class="disabled">98. Al-Bayyinah · البينة (Coming Soon)</li>
+    <li class="disabled">99. Az-Zalzalah · الزلزلة (Coming Soon)</li>
+    <li class="disabled">100. Al-Adiyat · العاديات (Coming Soon)</li>
+    <li class="disabled">101. Al-Qari'ah · القارعة (Coming Soon)</li>
+    <li class="disabled">102. At-Takathur · التكاثر (Coming Soon)</li>
+    <li class="disabled">103. Al-Asr · العصر (Coming Soon)</li>
+    <li class="disabled">104. Al-Humazah · الهمزة (Coming Soon)</li>
+    <li class="available" onclick="selectSurah(105)">105. Al-Fil · الفيل</li>
+    <li class="available" onclick="selectSurah(106)">106. Quraysh · قريش</li>
+    <li class="available" onclick="selectSurah(107)">107. Al-Ma'un · الماعون</li>
+    <li class="available" onclick="selectSurah(108)">108. Al-Kawthar · الكوثر</li>
+    <li class="available" onclick="selectSurah(109)">109. Al-Kafirun · الكافرون</li>
+    <li class="available" onclick="selectSurah(110)">110. An-Nasr · النصر</li>
+    <li class="available" onclick="selectSurah(111)">111. Al-Masad · المسد</li>
+    <li class="available" onclick="selectSurah(112)">112. Al-Ikhlas · الإخلاص</li>
+    <li class="available" onclick="selectSurah(113)">113. Al-Falaq · الفلق</li>
+    <li class="available" onclick="selectSurah(114)">114. An-Nas · الناس</li>         
+    
+    <!-- continue later -->
+  </ul>
+</main>
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>

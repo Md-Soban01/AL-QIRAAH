@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Recite</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="glass-nav">
+  <img src="assets/images/logo.png" class="logo" alt="AL-QIRAAH">
+  <button class="theme-btn" type="button" onclick="toggleTheme()" aria-label="Toggle light and dark mode">🌙</button>
+</header>
+
+<main class="container center">
+  <h2 id="surah-title">Surah Al-Fatiha</h2>
+
+  <div class="surah-selector">
+    <select id="surahSelect">
+        <option value="001">Al-Fatiha</option>
+        <option value="105">Al-Fil</option>
+        <option value="106">Quraysh</option>
+        <option value="107">Al-Ma'un</option>
+        <option value="108">Al-Kawthar</option>
+        <option value="109">Al-Kafirun</option>
+        <option value="110">An-Nasr</option>
+        <option value="111">Al-Masad</option>
+        <option value="112">Al-Ikhlas</option>
+        <option value="113">Al-Falaq</option>
+        <option value="114">An-Nas</option>
+    </select>
+ </div>
+
+  <div id="ayah-box" aria-live="polite"></div>
+
+  <div class="color-legend" aria-label="Analysis color guide">
+    <span class="legend-item">
+      <span class="legend-dot legend-correct"></span>
+      Correct
+    </span>
+    <span class="legend-item">
+      <span class="legend-dot legend-wrong"></span>
+      Incorrect
+    </span>
+    <span class="legend-item">
+      <span class="legend-dot legend-missing"></span>
+      Missing or not detected
+    </span>
+    <span class="legend-item">
+      <span class="legend-dot legend-close"></span>
+      Probably correct
+    </span>
+  </div>
+
+  <div id="status" role="status">Press Start and recite clearly</div>
+
+  <div class="controls">
+    <button id="startBtn" type="button">Start</button>
+    <button id="stopBtn" type="button" disabled>Stop</button>
+    <button id="retryBtn" type="button" disabled>Retry</button>
+    <button id="nextBtn" type="button" disabled>Next</button>
+  </div>
+</main>
+
+<script src="assets/js/app.js"></script>
+<script src="assets/js/surahs.js"></script>
+<script src="assets/js/recite.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,390 @@
+:root {
+  --bg: #0e1625;
+  --text: #ffffff;
+  --text-color: white;
+  --accent: #1f7a4d;
+  --glass: rgba(255,255,255,0.08);
+  --panel: rgba(255,255,255,0.08);
+  --panel-border: rgba(255,255,255,0.12);
+  --divider: rgba(255,255,255,0.16);
+}
+
+body.light {
+  --bg: #F5DEB3;
+  --text: #000000;
+  --text-color: rgb(0, 0, 0);
+  --glass: #974e05;
+  --panel: rgba(151,78,5,0.14);
+  --panel-border: rgba(151,78,5,0.42);
+  --divider: rgba(151,78,5,0.28);
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Georgia, serif;
+  min-height: 100vh;
+}
+
+/* ===== VIDEO LANDING ===== */
+.bg-video {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  z-index: -1;
+}
+.glass-nav {
+  backdrop-filter: blur(10px);
+  background: var(--glass);
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body.landing .glass-nav {
+  background: rgba(255, 255, 255, 0.08) !important;
+  border-bottom: none;
+  box-shadow: none;
+}
+
+body.landing {
+  color: #f8f8f8;
+}
+
+body.landing .hero-overlay {
+  display: none; /* Keeps the dark tint uniform */
+}
+
+body.landing .hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+body.landing .hero-content h1,
+body.landing .hero-content p {
+  color: #ffffff !important;
+}
+
+body.landing .hero-content h1 {
+  text-shadow: 0 14px 42px rgba(0, 0, 0, 0.45);
+}
+
+body.landing .hero-content p {
+  color: rgba(255, 255, 255, 0.88) !important;
+}
+
+body.landing .hero-content button {
+  background: #2d8e6f !important;
+  color: #fff !important;
+  border: 1px solid rgba(255,255,255,0.18);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.22);
+}
+
+.logo {
+  height: 50px;
+}
+
+.theme-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.hero {
+  height: 80vh;
+  position: relative;
+}
+
+.hero-content {
+  text-align: center;
+  padding-top: 25vh;
+}
+
+body.landing .hero-content h1,
+body.landing .hero-content p {
+  color: #f2f2f2;
+}
+
+body.landing .hero-content h1 {
+  text-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
+
+body.landing .hero-content p {
+  color: rgba(242, 242, 242, 0.88);
+}
+
+body.landing .hero-content button {
+  background: #2d8e6f;
+}
+
+.hero-content button {
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 16px;
+  border-radius: 6px;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  position: relative;
+  z-index: 1;
+  opacity: 0.8;
+}
+
+.container {
+  padding: 30px;
+}
+
+.surah-list li {
+  padding: 15px;
+  margin: 10px 0;
+  background: var(--glass);
+  cursor: pointer;
+}
+
+.surah-list li:hover {
+  background: var(--accent);
+}
+
+.surah-list li.available {
+  border-left: 4px solid #2ecc71;
+}
+
+.surah-list li.available:hover {
+  background: var(--accent);
+}
+
+.disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.center {
+  text-align: center;
+}
+
+#ayah-box {
+  background: var(--panel);
+  border: 1px solid var(--panel-border);
+  border-radius: 8px;
+  margin: 24px auto;
+  max-width: 920px;
+  min-height: 160px;
+  padding: 28px;
+}
+
+.ayah-number {
+  font-family: Arial, sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 0;
+  margin: 0 0 14px;
+  opacity: 0.7;
+}
+
+.arabic {
+  font-size: 32px;
+  direction: rtl;
+  line-height: 1.9;
+}
+
+.big {
+  font-size: 38px;
+}
+
+.analysis-result {
+  direction: rtl;
+  line-height: 2.1;
+}
+
+.transcription {
+  border-top: 1px solid var(--divider);
+  direction: ltr;
+  font-size: 1rem;
+  margin: 22px 0 0;
+  opacity: 0.76;
+  padding-top: 14px;
+}
+
+.transcription-label {
+  display: inline-block;
+  margin-right: 6px;
+}
+
+.color-legend {
+  align-items: center;
+  background: var(--panel);
+  border: 1px solid var(--panel-border);
+  border-radius: 8px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 10px 16px;
+  justify-content: center;
+  margin: 0 auto 8px;
+  max-width: 920px;
+  padding: 10px 14px;
+}
+
+.legend-item {
+  align-items: center;
+  display: inline-flex;
+  font-family: Arial, sans-serif;
+  font-size: 0.92rem;
+  gap: 7px;
+  opacity: 0.86;
+}
+
+.legend-dot {
+  border-radius: 999px;
+  display: inline-block;
+  height: 11px;
+  width: 11px;
+}
+
+.legend-correct { background: #2ecc71; }
+.legend-wrong { background: #e74c3c; }
+.legend-missing { background: #f1c40f; }
+.legend-close { background: #ffffff; }
+
+#status {
+  margin: 16px 0 10px;
+  min-height: 24px;
+}
+
+#status.error {
+  color: #ff8a80;
+}
+
+.controls button {
+  margin: 10px;
+  padding: 10px 20px;
+  background: var(--accent);
+  border: 0;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  font: inherit;
+  min-width: 92px;
+}
+
+.controls button:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+
+.word-correct {
+  color: #4caf50;
+}
+
+.word-unclear {
+  color: #fbc02d;
+}
+
+.word-wrong {
+  color: #e53935;
+}
+
+#ayah-box span {
+  font-size: 32px;
+  padding: 4px;
+  transition: color 0.3s ease;
+}
+
+.word {
+  border-bottom: 3px solid currentColor;
+  margin: 0 7px 10px;
+  padding: 0 2px 4px;
+  font-size: 2.2rem;
+  display: inline-block;
+}
+
+.word.correct { color: #2ecc71; }
+.word.wrong,
+.word.mispronounced { color: #e74c3c; }
+.word.missing { color: #f1c40f; }
+.word.unclear_audio { color: #f1c40f; }
+.word.probably_correct { color: #e67e22; }
+.word.missing_reference { color: #bdc3c7; }
+
+
+/* ===== CLICK SAFETY FIX ===== */
+button {
+  pointer-events: auto !important;
+  z-index: 10;
+  position: relative;
+}
+
+.controls {
+  position: relative;
+  z-index: 10;
+}
+
+/* If you have a full-screen container */
+.main,
+.recite-container,
+.overlay {
+  pointer-events: none;
+}
+
+.controls,
+.controls * {
+  pointer-events: auto;
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding: 18px;
+  }
+
+  #ayah-box {
+    padding: 20px 14px;
+  }
+
+  .big,
+  .word {
+    font-size: 1.9rem;
+  }
+
+  .controls {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 18px;
+  }
+
+  .controls button {
+    margin: 0;
+    min-width: 0;
+  }
+
+  .color-legend {
+    align-items: flex-start;
+    display: grid;
+    justify-items: start;
+    margin-bottom: 12px;
+  }
+}
+.surah-selector{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+#surahSelect{
+    padding:10px;
+    font-size:16px;
+    border-radius:8px;
+    cursor:pointer;
+}

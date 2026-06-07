@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual Environments
+venv/
+.venv/
+env/
+
+# Runtime Files
+backend/temp_audio/*
+!backend/temp_audio/.gitkeep
+
+backend/uploads/*
+!backend/uploads/.gitkeep
+
+# Logs
+*.log
+
+# Session Data
+backend/data_logs/*.json
+
+# Environment Variables
+.env
+
+# VS Code
+.vscode/
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Build Files
+dist/
+build/
+*.egg-info/

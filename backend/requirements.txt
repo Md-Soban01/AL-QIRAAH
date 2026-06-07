@@ -1,0 +1,15 @@
+# Exact versions tested with this repository
+fastapi==0.128.8
+uvicorn==0.39.0
+openai-whisper==20250625
+librosa==0.11.0
+numpy==2.0.2
+scipy==1.13.1
+fastdtw==0.3.4
+python-multipart==0.0.20
+
+# Notes:
+# - Install these in a fresh virtual environment.
+# - FFmpeg is required by openai-whisper at runtime and must be installed separately.
+# - On Windows, use: python -m venv .venv && .venv\Scripts\activate
+# - Then install with: python -m pip install -r requirements.txt
